@@ -592,7 +592,7 @@ If there is no common part, this will be nil.")
   (ignore-errors
     (with-temp-buffer
       (pp (ac-comphist-serialize ac-comphist) (current-buffer))
-      (write-region (point-min) (point-max) ac-comphist-file))))
+      (write-region (point-min) (point-max) ac-comphist-file nil 0))))
 
 
 
